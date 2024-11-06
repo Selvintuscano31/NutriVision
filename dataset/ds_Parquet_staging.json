@@ -1,5 +1,5 @@
 {
-	"name": "Parquet_staging",
+	"name": "ds_Parquet_staging",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_stgfall2024selvin",
