@@ -1,0 +1,11 @@
+{
+	"name": "ls_stgblobfall2024selvin",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"serviceEndpoint": "https://stgblobfall2024selvin.blob.core.windows.net/",
+			"accountKind": "StorageV2"
+		}
+	}
+}
