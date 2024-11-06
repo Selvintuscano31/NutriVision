@@ -1,0 +1,19 @@
+{
+	"name": "Parquet_staging",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_stgfall2024selvin",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Seattle_Pet_Licenses_20241007.parquet"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
