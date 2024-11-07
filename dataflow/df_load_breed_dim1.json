@@ -1,0 +1,35 @@
+{
+	"name": "df_load_breed_dim1",
+	"properties": {
+		"type": "Flowlet",
+		"typeProperties": {
+			"sources": [],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "inputnowflakestage"
+				},
+				{
+					"name": "inputBreedDim"
+				}
+			],
+			"scriptLines": [
+				"input(output(",
+				"          LICENSE_ISSUE_DATE as string,",
+				"          LICENSE_NUMBER as string,",
+				"          ANIMAL_S_NAME as string,",
+				"          SPECIES as string,",
+				"          PRIMARY_BREED as string,",
+				"          SECONDARY_BREED as string,",
+				"          ZIP_CODE as string,",
+				"          DI_CREATED_DATE as string,",
+				"          DI_JOB_ID as string",
+				"     ),",
+				"     order: 0,",
+				"     allowSchemaDrift: true) ~> inputnowflakestage",
+				"input(order: 1,",
+				"     allowSchemaDrift: true) ~> inputBreedDim"
+			]
+		}
+	}
+}
