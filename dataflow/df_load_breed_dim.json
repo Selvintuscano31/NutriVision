@@ -94,7 +94,18 @@
 				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     stageInsert: true) ~> BREEDDIM"
+				"     stageInsert: true,",
+				"     mapColumn(",
+				"          SPECIES_NAME = SPECIES,",
+				"          PRIMARY_BREED,",
+				"          SECONDARY_BREED,",
+				"          MAXBREEDSK,",
+				"          COUNT_ROW,",
+				"          RowNum,",
+				"          BREED_SK,",
+				"          DI_CREATED_DT,",
+				"          DI_JOB_ID",
+				"     )) ~> BREEDDIM"
 			]
 		}
 	}
