@@ -99,7 +99,6 @@
 				"          SPECIES_NAME = SPECIES,",
 				"          PRIMARY_BREED_NAME = PRIMARY_BREED,",
 				"          SECONDARY_BREED_NAME = SECONDARY_BREED,",
-				"          COUNT_ROW,",
 				"          BREED_SK,",
 				"          DI_CREATED_DT,",
 				"          DI_JOB_ID",
